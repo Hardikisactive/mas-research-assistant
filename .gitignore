@@ -46,8 +46,8 @@ Thumbs.db
 htmlcov/
 *.junit.xml
 
-# Streamlit — keep config but never commit real secrets
-.streamlit/secrets.toml
+# Streamlit
+.streamlit/
 
 # Logs
 logs/

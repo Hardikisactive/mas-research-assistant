@@ -10,15 +10,10 @@ import streamlit as st
 
 from app.observability.logger import setup_logging
 from app.config.settings import get_settings
-from app.startup import ensure_servers_running
 
 setup_logging("INFO")
 settings = get_settings()
 settings.ensure_dirs()
-
-# Auto-start A2A + MCP servers when running on Streamlit Cloud
-# (safe no-op when servers are already running locally)
-ensure_servers_running()
 
 st.set_page_config(
     page_title="MAS Research Assistant",

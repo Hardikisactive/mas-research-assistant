@@ -142,22 +142,6 @@ class Settings(BaseSettings):
         return bool(self.google_api_key or self.groq_api_key or self.openai_api_key)
 
 
-def _inject_streamlit_secrets() -> None:
-    """
-    When running on Streamlit Community Cloud, secrets are stored in
-    st.secrets (backed by the dashboard). Inject them into os.environ
-    so pydantic-settings picks them up normally.
-    """
-    try:
-        import streamlit as st
-        for key, value in st.secrets.items():
-            if isinstance(value, str) and key not in os.environ:
-                os.environ[key] = value
-    except Exception:
-        pass  # Not on Streamlit Cloud, or streamlit not imported yet
-
-
 @lru_cache(maxsize=1)
 def get_settings() -> Settings:
-    _inject_streamlit_secrets()
     return Settings()
