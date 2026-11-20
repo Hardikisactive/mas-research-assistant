@@ -1,0 +1,4 @@
+"""
+pyproject.toml — project metadata and pytest configuration.
+"""
+

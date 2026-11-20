@@ -1,0 +1,2 @@
+# System-level packages needed by FAISS on Streamlit Cloud's Linux environment
+libgomp1

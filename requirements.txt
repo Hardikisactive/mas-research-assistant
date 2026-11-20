@@ -1,0 +1,57 @@
+# Required packages for Multi-Agent Research Assistant
+# Generated: 2026-10-21
+
+# ── Core frameworks ──────────────────────────────────────────────────────────
+crewai>=1.15.0
+google-adk>=2.12.0
+a2a-sdk[fastapi]>=1.2.0
+
+# ── LLM providers ────────────────────────────────────────────────────────────
+google-generativeai>=0.8.0
+
+# ── MCP tool server ──────────────────────────────────────────────────────────
+mcp[cli]>=1.28.0
+
+# ── Vector store & embeddings ────────────────────────────────────────────────
+faiss-cpu>=1.15.0
+sentence-transformers>=6.0.0
+
+# ── Web UI ───────────────────────────────────────────────────────────────────
+streamlit>=1.66.0
+
+# ── Web search ───────────────────────────────────────────────────────────────
+duckduckgo-search>=8.0.0
+
+# ── API & HTTP ───────────────────────────────────────────────────────────────
+fastapi>=0.115.0
+uvicorn>=0.34.0
+httpx>=0.26.0
+
+# ── Data & analysis ──────────────────────────────────────────────────────────
+pandas>=2.2.0
+numpy>=1.26.0
+scikit-learn>=1.4.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.20.0
+
+# ── Document processing ───────────────────────────────────────────────────────
+pypdf>=6.0.0
+
+# ── Schema & config ──────────────────────────────────────────────────────────
+pydantic>=2.10.0
+pydantic-settings>=2.16.0
+
+# ── Observability ────────────────────────────────────────────────────────────
+opentelemetry-api>=1.42.0
+opentelemetry-sdk>=1.42.0
+python-json-logger>=2.0.0
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+tenacity>=8.2.0
+rich>=13.0.0
+
+# ── Testing ──────────────────────────────────────────────────────────────────
+pytest>=9.0.0
+pytest-asyncio>=0.24.0

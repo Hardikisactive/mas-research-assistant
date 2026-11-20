@@ -1,0 +1,58 @@
+# Multi-Agent Research Assistant — .gitignore
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Secrets — NEVER commit
+.env
+*.key
+*.pem
+*.p12
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Data (user uploads, vector store, sessions, blackboard DB)
+data/
+!data/.gitkeep
+
+# Evaluation results (raw outputs may contain query data)
+evaluation_data/results/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.junit.xml
+
+# Streamlit — keep config but never commit real secrets
+.streamlit/secrets.toml
+
+# Logs
+logs/
+*.log
+
+# Docker build artifacts
+*.tar.gz
+
